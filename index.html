@@ -66,7 +66,87 @@
 </section>
 
 <section class="projects">
-    <input type="text" name="name" placeholder="Find a repository...">
+    <div class="toprepo-btns">
+        <input type="text" name="name" placeholder="Find a repository...">
+        <label for ="type"></label>
+        <select name="type" id="type">
+            <option value="type">Type</option>
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+            <option value="sources">Sources</option>
+            <option value="Forks">Forks</option>
+            <option value="archived">Archived</option>
+            <option value="mirrors">Mirrors</option>
+            <option value="templates">Templates</option>
+    </select>
+
+    <label for ="language"></label>
+        <select name="language" id="language">
+            <option value="language">Language</option>
+            <option value="all">All</option>
+            <option value="javascript">Javascript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="jupyter-notebook">Jupyter Notebook</option>
+        </select>
+
+        <label for ="sort"></label>
+        <select name="sort" id="sort">
+            <option value="sort">Sort</option>
+            <option value="last-updated">Last updated</option>
+            <option value="name">Name</option>
+            <option value="stars">Stars</option>
+        </select>
+
+        <button class="new-button" type="button">New</button>
+
+    </div>
+
+    <ul class="repo-list">
+        <li class="repo-item">
+            <div>
+                <h3>
+                    <a href="#" class="repo-name">Js-array-practice</a>
+                    <span class="pubpriv-label">public</span>
+                    <div class="update-timer">
+                        <span class="fa-solid fa-circle repo-circle"></span>
+                        <span class="programming-language">JavaScript</span>
+                        <span class="repo-update">Updated 6 hours ago</span>
+                    </div>
+                    <div class="star-btn">
+                        <!-- <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button> -->
+                        <button class="dropdown-arrow"><i class="fa-duotone fa-caret-down"></i></button>
+                        <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button>
+                    </div>
+                </h3>
+            </div>
+        </li>
+
+        <li class="repo-item">
+            <div>
+                <h3>
+                    <a href="#" class="repo-name">github-recreate</a>
+                    <span class="pubpriv-label">public</span>
+                    <div class="update-timer">
+                        <span class="fa-solid fa-circle repo-circle"></span>
+                        <span class="programming-language">HTML</span>
+                        <span class="repo-update">Updated 18 hours ago</span>
+                    </div>
+                    <div class="star-btn">
+                        <!-- <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button> -->
+                        <button class="dropdown-arrow"><i class="fa-duotone fa-caret-down"></i></button>
+                        <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button>
+                    </div>
+                </h3>
+            </div>
+        </li>
+
+        
+    </ul>
+
+
+
+
 </section>
 
 
@@ -88,6 +168,7 @@
 
 
 </main>
-    <script src="main.js"></script>
+
+<script src="main.js"></script>
 </body>
 </html>
