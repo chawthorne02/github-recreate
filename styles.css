@@ -62,15 +62,21 @@ body {
     flex-direction: column;
     width: 35%;
     align-items: center;
-}
+
+} 
 
 .pic-info > img {
     border: solid 2px #21262C;
     border-radius: 50%;
 }
 
+.names {
+    margin-right: 54px;
+}
+
 .fullname {
     display: block;
+    margin-left: 
 }
 
 .username {
@@ -79,7 +85,14 @@ body {
 
 .edit-btn {
     width: 45%;
+    height: 34px;
     background-color: #21262C;
     color: #fff;
     border: solid 1px;
+    
+}
+
+.organizations {
+    margin-right: 141px;
+    padding-top: 26px;
 }
