@@ -203,7 +203,7 @@ select {
 .star-button1 {
     background-color: #21262d;
     color: #c9d1d9;
-    border: solid 1px #c9d1d9;
+    border: solid 1px #373b41;
     border-radius: 8px;
     padding: 3px 16px;
 }
@@ -211,7 +211,7 @@ select {
 .dropdown-arrow {
     background-color: #21262d;
     color: #c9d1d9;
-    border: solid 1px #c9d1d9;
+    border: solid 1px #373b41;
     border-radius: 8px;
     padding: 3px 16px;
 }
