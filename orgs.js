@@ -3,7 +3,7 @@
 
 
 
-[
+const orgs = [
     {
       "login": "ccs-summer-2022",
       "id": 112399320,
@@ -19,3 +19,5 @@
       "description": null
     }
   ]
+
+  export default orgs

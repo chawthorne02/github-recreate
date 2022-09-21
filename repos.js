@@ -1,7 +1,7 @@
 
 
 
-[
+const repos = [
     {
       "id": 530673460,
       "node_id": "R_kgDOH6FvNA",
@@ -1317,3 +1317,5 @@
       "default_branch": "main"
     }
   ]
+
+  export default repos

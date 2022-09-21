@@ -258,3 +258,13 @@ footer {
     margin-left: 8px;
 }
 
+.org-img-container {
+    list-style-type: none;
+}
+
+.org-img-container img {
+   height: 32px;
+   width: 32px;
+}
+
+

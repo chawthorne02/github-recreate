@@ -61,7 +61,7 @@
 
     <div class="organizations">
         <h4>Organizations</h4>
-        <img src="https://avatars.githubusercontent.com/u/112399320?s=64&v=4" height="32" width="32">
+        <!-- <img src="https://avatars.githubusercontent.com/u/112399320?s=64&v=4" height="32" width="32"> -->
     </div>
     
 </section>
@@ -104,7 +104,7 @@
     </div>
 
     <ul class="repo-list">
-        <li class="repo-item">
+        <!-- <li class="repo-item">
             <div>
                 <h3>
                     <a href="#" class="repo-name">Js-array-practice</a>
@@ -116,13 +116,12 @@
                         <span class="repo-update">Updated 6 hours ago</span>
                     </div>
                     <div class="star-btn">
-                        <!-- <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button> -->
-                        <button class="dropdown-arrow"><i class="fa-solid fa-sort-down"></i></button>
+                         <button class="dropdown-arrow"><i class="fa-solid fa-sort-down"></i></button>
                         <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button>
                     </div>
                 
-            </div>
-        </li>
+            </div> 
+        </li> 
 
         <li class="repo-item">
             <div>
@@ -136,7 +135,6 @@
                         <span class="repo-update">Updated 18 hours ago</span>
                     </div>
                     <div class="star-btn">
-                        <!-- <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button> -->
                         <button class="dropdown-arrow"><i class="fa-solid fa-sort-down"></i></button>
                         <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button>
                     </div>
@@ -145,7 +143,7 @@
         </li>
 
         
-    </ul>
+    </ul> -->
 
 
 
@@ -182,6 +180,46 @@
 </footer>
 
 
+<!-- SCRIPTS -->
+<script id="orgs-template" type="text/x-handlebars-template">
+    {{#each orgs}}
+    <li class="org-img-container">
+        <a href="{{url}}"><img src="{{avatar_url}}"></a>
+    </li>
+    {{/each}}
+  </script>
+
+
+
+    <script id="repos-template" type="text/x-handlebars-template">
+    {{#each repos}}
+    <li class="repo-item">
+        <h3>
+            <a href="{{html_url}}" class="repo-name">{{name}}</a>
+            <span class="pubpriv-label">{{visibility}}</span>
+        </h3>
+        <div class="update-timer">
+         <span class="fa-solid fa-circle repo-circle"></span>
+         <span class="programming-language">{{language}}</span>
+        <span class="repo-update">{{updated_at}}</span>
+        </div>
+        <div class="star-btn">
+            <button class="dropdown-arrow">
+                <i class="fa-solid fa-sort-down"></i>
+            </button>
+            <button class="star-button1">
+                <i class="fa-regular fa-star"></i>
+                Star
+            </button>
+        </div>
+    </li>
+    {{/each}}
+  </script>
+
+  
+
+
+
 
 
 
@@ -195,7 +233,6 @@
     referrerpolicy="no-referrer">
  </script>
 
-
-<script src="main.js"></script>
+<script src="main.js" type="module"></script>
 </body>
 </html>
