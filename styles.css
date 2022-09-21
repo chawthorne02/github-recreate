@@ -111,15 +111,28 @@ body {
 }
 
 input {
-    width: 45%;
+    width: 270px;
     background-color: #0D1116;
     border: solid 1px #21262C;
     color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+select {
+    background-color: #21262C;
+    border: solid 1px #373b41;
+    color: #c9d1d9;;
+    padding: 5px 16px;
+    border-radius: 8px;
+    width: 88px;
 }
 
 .new-button {
     background-color: #1abd42;
     color: #fff;
+    padding: 5px 16px;
+    border-radius: 8px;
 }
 
 /* .my-repos {
@@ -170,6 +183,10 @@ input {
     margin-left: 12px;
 }
 
+.repo-item {
+    list-style: none;
+}
+
 .repo-update {
     font-size: 12px;
 }
@@ -178,19 +195,66 @@ input {
     display: flex;
     flex-direction: row-reverse;
     margin-top: -34px;
-    border-bottom: solid 1px white;
+    border-bottom: 1px solid #22262c;
     padding-bottom: 45px;
-    
+
 }
 
 .star-button1 {
     background-color: #21262d;
     color: #c9d1d9;
     border: solid 1px #c9d1d9;
+    border-radius: 8px;
+    padding: 3px 16px;
 }
 
 .dropdown-arrow {
     background-color: #21262d;
     color: #c9d1d9;
     border: solid 1px #c9d1d9;
+    border-radius: 8px;
+    padding: 3px 16px;
 }
+
+.fa-github {
+    font-size: 34px;
+}
+
+footer {
+    width: 86%;
+    height: 115px;
+    border-top: 1px solid #22262c;
+    margin-left: 72px;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 33px;
+}
+
+.footer-links > a {
+    text-decoration: none;
+    color: #58a6ff;
+    
+}
+
+.copywrite {
+    display: flex;
+    color: #8d949d;
+    font-size: 12px;
+}
+
+.copywrite > a {
+    font-size: 24px;
+    color: #5c636e;
+}
+
+.copywrite > div {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+

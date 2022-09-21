@@ -20,6 +20,7 @@
         
             <ul class="topbar-left">
                 <a href="#" class="fa-brands fa-github"></a>
+                <input class="top-searchbar" data="text" type="search" placeholder="Search or jump to...">
                 <a href="#">Pull Requests</a>
                 <a href="#">Issues</a>
                 <a href="#"> Marketplace</a>
@@ -28,19 +29,19 @@
 
             <ul class="topbar-right">
                 <a href="#" class="fa-regular fa-bell"></a>
-                <a href="#">+</a>
-                <!-- <a href="#">image</a> -->
+                <a href="#">+<i class="fa-solid fa-sort-down"></i></a>
+                <a href="#"><img src="https://avatars.githubusercontent.com/u/81435985?v=4" width="20" height="20"><i class="fa-solid fa-sort-down"></i></a>
             </ul>
     
     </nav> 
 
     <div class="middle-bar">
         <ul class="middlebar-info">
-            <a href="#">Overview</a>
-            <a href="#">Repositories</a>
-            <a href="#">Projects</a>
-            <a href="#">Packages</a>
-            <a href="#">Stars</a>
+            <a href="#"><i class="fa-solid fa-book-open"></i> Overview</a>
+            <a href="#"><i class="fa-solid fa-book-bookmark"></i> Repositories</a>
+            <a href="#"><i class="fa-solid fa-kaaba"></i> Projects</a>
+            <a href="#"><i class="fa-solid fa-cube"></i> Packages</a>
+            <a href="#"><i class="fa-regular fa-star"></i> Stars</a>
 
         </ul>
     </div>
@@ -50,7 +51,7 @@
 <main class="container">
 
 <section class="pic-info">
-    <img src="https://avatars.githubusercontent.com/u/81435985?v=4" width="260" height="260">
+    <img src="https://avatars.githubusercontent.com/u/81435985?v=4" width="300" height="300">
     <h1 class="names">
         <span class="fullname">Corey Hawthorne</span>
         <span class="username">chawthorne02</span>
@@ -98,7 +99,7 @@
             <option value="stars">Stars</option>
         </select>
 
-        <button class="new-button" type="button">New</button>
+        <button class="new-button" type="button"><i class="fa-solid fa-book-bookmark"></i> New</button>
 
     </div>
 
@@ -108,6 +109,7 @@
                 <h3>
                     <a href="#" class="repo-name">Js-array-practice</a>
                     <span class="pubpriv-label">public</span>
+                </h3>
                     <div class="update-timer">
                         <span class="fa-solid fa-circle repo-circle"></span>
                         <span class="programming-language">JavaScript</span>
@@ -118,7 +120,7 @@
                         <button class="dropdown-arrow"><i class="fa-duotone fa-caret-down"></i></button>
                         <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button>
                     </div>
-                </h3>
+                
             </div>
         </li>
 
@@ -127,6 +129,7 @@
                 <h3>
                     <a href="#" class="repo-name">github-recreate</a>
                     <span class="pubpriv-label">public</span>
+                </h3>
                     <div class="update-timer">
                         <span class="fa-solid fa-circle repo-circle"></span>
                         <span class="programming-language">HTML</span>
@@ -137,7 +140,7 @@
                         <button class="dropdown-arrow"><i class="fa-duotone fa-caret-down"></i></button>
                         <button class="star-button1"><i class="fa-regular fa-star"></i>Star</button>
                     </div>
-                </h3>
+                
             </div>
         </li>
 
@@ -153,21 +156,35 @@
 
 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- <footer>
+    <div class="copywrite">
+        <a href="www.github.com" class="fa-brands fa-github"> </a>
+        <div>© 2022 Github, Inc.</div>
+    </div>
+</footer> -->
 </main>
+
+<footer>
+    <div class="copywrite">
+        <a href="www.github.com" class="fa-brands fa-github"> </a>
+        <div>© 2022 Github, Inc.</div>
+    </div>
+    <nav>
+        <ul class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Status</a>
+            <a href="#">Docs</a>
+            <a href="#">Contact Github</a>
+            <a href="#">Pricing</a>
+            <a href="#">API</a>
+            <a href="#">Training</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+        </ul>
+    </nav>
+</footer>
 
 <script src="main.js"></script>
 </body>
