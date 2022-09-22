@@ -55,6 +55,7 @@ body {
 .middlebar-info {
     display: flex;
     gap: 40px;
+    color: #8b9493;
 }
 
 .middlebar-info > a {
@@ -82,10 +83,14 @@ body {
 
 .fullname {
     display: block;
+    margin-left: -70px;
+    font-size: 24px;
 }
 
 .username {
     font-size: 20px;
+    margin-left: -117px;
+    color: #c9d1d9;;
 }
 
 .edit-btn {
@@ -95,7 +100,7 @@ body {
     color: #fff;
     border: solid 1px;
     border-radius: 25px;
-    
+    margin-top: 20px;
 }
 
 .organizations {
@@ -181,6 +186,7 @@ select {
 .programming-language {
     font-size: 12px;
     margin-left: 12px;
+    color: #8b9493;
 }
 
 .repo-item {
@@ -189,6 +195,7 @@ select {
 
 .repo-update {
     font-size: 12px;
+    color: #8b9493;
 }
 
 .star-btn {
@@ -268,3 +275,8 @@ footer {
 }
 
 
+.profile-pic {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}

@@ -51,16 +51,16 @@
 <main class="container">
 
 <section class="pic-info">
-    <img src="https://avatars.githubusercontent.com/u/81435985?v=4" width="300" height="300">
-    <h1 class="names">
-        <span class="fullname">Corey Hawthorne</span>
-        <span class="username">chawthorne02</span>
+    <!-- <img src="https://avatars.githubusercontent.com/u/81435985?v=4" width="300" height="300"> -->
+    <!-- <h1 class="names"> -->
+        <!-- <span class="fullname">Corey Hawthorne</span> -->
+       <!-- <span class="username">chawthorne02</span> -->
     </h1>
 
-    <button class="edit-btn" type="button">Edit profile</button>
+    <!-- <button class="edit-btn" type="button">Edit profile</button> -->
 
     <div class="organizations">
-        <h4>Organizations</h4>
+        <!-- <h4>Organizations</h4> -->
         <!-- <img src="https://avatars.githubusercontent.com/u/112399320?s=64&v=4" height="32" width="32"> -->
     </div>
     
@@ -181,9 +181,29 @@
 
 
 <!-- SCRIPTS -->
+
+
+<script id="user-template" type="text/x-handlebars-template">
+    {{#with user}}
+    <a href="#">
+     <img class="profile-pic" src="{{avatar_url}}">
+    </a>
+    <span class="fullname">{{name}}</span>
+    <span class="username">{{login}}</span>
+    
+    <button class="edit-btn" type="button">Edit profile</button>
+
+
+
+ {{/with}}
+</script>
+
+
+
 <script id="orgs-template" type="text/x-handlebars-template">
     {{#each orgs}}
     <li class="org-img-container">
+        <h4>Organizations</h4>
         <a href="{{url}}"><img src="{{avatar_url}}"></a>
     </li>
     {{/each}}
@@ -201,7 +221,7 @@
         <div class="update-timer">
          <span class="fa-solid fa-circle repo-circle"></span>
          <span class="programming-language">{{language}}</span>
-        <span class="repo-update">{{updated_at}}</span>
+        <span class="repo-update">Updated at {{updated_at}}</span>
         </div>
         <div class="star-btn">
             <button class="dropdown-arrow">
