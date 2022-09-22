@@ -32,7 +32,7 @@ document.querySelector(".pic-info").insertAdjacentHTML("afterbegin", userHtml);
 
 
 
-const API_KEY = "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";
+
 }
 Promise.all([
     fetch(`https://api.github.com/users/chawthorne02/repos`),
